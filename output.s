@@ -33,14 +33,14 @@ public static void Algo1(int[][]);
       26: istore_1            // store value to variable 1, Elem = A[i][r];
       27: iconst_0            // load constant 0 to stack
       28: istore_2            // store value to variable 2, j = 0;
+      // thirth loop start: while (Elem > A[j][r])
+      // third loop exit condition start
       29: iload_1             // load int value of local variable Elem to stack
       30: aload_0             // load a reference of local variable A to stack
       31: iload_2             // load int value of local variable j to stack
       32: aaload              // load a refence from array A, specifically A[j] to stack
       33: iload_3             // load int value of local variable r to stack
       34: iaload              // load int from array A, specifically A[j][r];
-      // thirth loop start: while (Elem > A[j][r])
-      // third loop exit condition start
       35: if_icmple     45    // check third loop continuation condition Elem > A[j][r]
                               // and jump to label 45 when it fails
       // third loop exit condition end
